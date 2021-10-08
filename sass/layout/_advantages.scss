@@ -1,0 +1,32 @@
+
+.advantages__list {
+  display: flex;
+}
+.advantages__img{
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+border-radius: 4px
+}
+.advantages__title {
+  color: var(--title-text-color);
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.advantages__box {
+  margin-left: 30px;
+
+}
+
+.advantages__box:first-child {
+  margin-left: 0;
+}
+.advantages__text {
+  color: var(--primary-text-color);
+  width: 270px;
+
+}

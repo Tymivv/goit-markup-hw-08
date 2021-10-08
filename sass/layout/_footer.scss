@@ -1,0 +1,97 @@
+.footer-address-list {
+  display: block;
+}
+
+
+.footer {
+  background: #2f303a;
+  padding: 60px 0;
+}
+
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
+
+
+.addres {
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  list-style: none;
+  &:hover,
+  &:focus {
+  color: var(--text-line);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer-telef {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  list-style: none;
+  &:hover,
+  &:focus {
+  color: var(--text-line);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+
+.footer-mail,
+.footer-telef {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__contact {
+  margin-top: 20px;
+}
+
+.futer-social {
+margin-left: 70px;
+}
+
+.futer-forn-title,
+.futer-title {
+color: #FFFFFF;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+}
+
+.furet-social-link {
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(256, 256, 256, 0.10);
+    border-radius: 50%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.furet-social-icon {
+    fill: #ffffff;
+}
+
+.furet-social-link:hover,
+.furet-social-link:focus {
+    background-color: var(--text-line);
+}

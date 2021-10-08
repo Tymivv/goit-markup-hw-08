@@ -1,0 +1,163 @@
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    padding: 40px;
+}
+
+.close-icon{
+  margin-left: 10px;
+  
+}
+
+.btn-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-title {
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+font-weight: bold;
+color: var(--title-text-color);
+margin-bottom: 12px;
+}
+
+.form-label{
+display: block;
+margin-bottom: 5px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+.human-data {
+margin-bottom: 10px;
+}
+
+.form-input {
+width: 100%;
+height: 45px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+margin-bottom: 10px;
+padding-left: 40px;
+outline: none;
+    &:focus + .form-icon {
+    fill: var(--text-line);
+    }
+    &:focus {
+    border-color: var(--text-line);
+    }
+}
+
+
+.input-wrapper {
+    display: block;
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 25%;
+    
+}
+
+.check-text {
+    font-size: 14px;
+    color: var(--fifth-text-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.check-item {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .form-checkbox:checked + .check-text > & {
+        background-color: var(--text-line);
+        border-color: transparent;
+        }
+}
+
+
+
+
+.form-btn {
+
+  display: block;
+    margin: 0 auto;
+  font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+padding: 10px 55px;
+cursor: pointer;
+
+}
+.link-check {
+  color: var(--text-line);
+  margin-left: 5px;
+}
+
+.text-coment{
+width: 100%;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+padding: 12px 16px;
+resize: none;
+    &:focus {
+    border-color: var(--text-line);
+    }
+}
