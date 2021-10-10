@@ -3,18 +3,36 @@
     background-color: var(--background-color-button);
 }
 .team__list {
-  display: flex;
+  display: block;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    flex-wrap: wrap;
+    }
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+   }
 }
 
 .team__icon {
-  margin-left: 30px;
+  display: block;
+  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-    :first-child {
-    margin-left: 0px;
+    //:first-child {
+    //margin-left: 0px;
+    //}
+     @media screen and (min-width: 768px) {
+       margin-left: 30px;
     }
+   @media screen and (min-width: 1200px) {
+       margin-left: 30px;
+       margin-bottom: 0px;
+   }
 }
+
+
 
 
 .team__text {

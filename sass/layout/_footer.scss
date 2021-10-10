@@ -9,8 +9,16 @@
 }
 
 .footer-container{
-  display: flex;
+  display: block;
   align-items: baseline;
+    @media screen and (min-width: 768px) {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        display:flex;
+    }
 }
 
 
@@ -63,7 +71,7 @@
 margin-left: 70px;
 }
 
-.futer-forn-title,
+
 .futer-title {
 color: #FFFFFF;
 font-size: 14px;
@@ -71,7 +79,6 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 20px;
-
 }
 
 .furet-social-link {
