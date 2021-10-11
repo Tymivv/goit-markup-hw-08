@@ -62,7 +62,13 @@ border-radius: 4px;
 }
 .advantages__text {
   color: var(--primary-text-color);
-  width: 270px;
+  text-align: start;
+   @media screen and (min-width: 768px) {
+    
+    }
+    @media screen and (min-width: 1200px) {
+       width: 270px;
+    }
 
 }
 
