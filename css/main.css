@@ -973,6 +973,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
@@ -1122,6 +1124,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
 
@@ -1193,6 +1197,7 @@ body {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
