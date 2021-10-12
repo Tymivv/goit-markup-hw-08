@@ -392,6 +392,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul,
@@ -690,15 +691,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.telef:hover .telef-icon,
-.telef:focus .telef-icon {
-  fill: var(--text-line);
+.telef:hover, .telef:focus {
+  color: var(--text-line);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.telef:hover .telef-icon .telef-icon,
-.telef:hover .telef-icon .telef-icon,
-.telef:focus .telef-icon .telef-icon,
-.telef:focus .telef-icon .telef-icon {
+.telef:hover .telef-icon,
+.telef:hover .telef-icon, .telef:focus .telef-icon,
+.telef:focus .telef-icon {
   fill: var(--text-line);
 }
 
@@ -768,6 +769,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -882,8 +889,8 @@ body {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob/hero_mob@2X.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero_mob@2X.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob/hero_mob@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/hero_mob@2x.jpg);
   }
 }
 
@@ -1150,6 +1157,7 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1184,7 +1192,6 @@ body {
 
 .team__wrapper {
   padding: 30px 0;
-  background-color: #ffffff;
 }
 
 .clients__list {
@@ -1418,6 +1425,11 @@ body {
 
 .footer__contact {
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.futer-social {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1599,6 +1611,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1618,8 +1631,8 @@ body {
 }
 
 .project-button__list {
-  margin-left: 8px;
-  width: calc((100% - 6 * 10px) / 3);
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .project-button__list:first-child {
@@ -1757,7 +1770,14 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  min-width: 450px;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .close-icon {
@@ -1842,7 +1862,8 @@ body {
 }
 
 .check-text {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: calc(14/12);
   color: var(--fifth-text-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1852,6 +1873,13 @@ body {
           align-items: center;
   position: relative;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: calc(24/14);
+  }
 }
 
 .check-item {
