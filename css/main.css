@@ -391,7 +391,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 ul,
@@ -666,6 +666,12 @@ body {
   fill: var(--text-line);
 }
 
+@media screen and (min-width: 1200px) {
+  .mail {
+    margin-bottom: 0px;
+  }
+}
+
 .telef {
   font-weight: 500;
   display: -webkit-box;
@@ -751,7 +757,6 @@ body {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  position: absolute;
   overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;

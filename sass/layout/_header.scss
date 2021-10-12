@@ -132,6 +132,9 @@
       fill: var(--text-line);
     }
   }
+  @media screen and (min-width: 1200px) {
+     margin-bottom: 0px;
+  }
 }
 
 .telef {
